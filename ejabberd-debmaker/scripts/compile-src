@@ -12,7 +12,7 @@ work_dir="/home/j2play/pogoejabberd/ejabberd-debmaker/ejabberd/src/"
 
 cd $work_dir
 check_error "EJABBERDBUILD - CD"
-./configure --prefix=/home/j2play/ejabberd"
+./configure --prefix=/home/j2play/ejabberd
 check_error "EJABBERDBUILD - CONFIGURE"
 make
 check_error "EJABBERDBUILD - MAKE"
