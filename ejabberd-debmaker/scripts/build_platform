@@ -1,0 +1,22 @@
+#!/bin/bash
+
+export JAVA_HOME=/usr/lib/jvm/java-6-sun
+
+check_error()
+{
+  if [ $? -ne 0 ]; then
+    echo "ERROR on >>>>> "$1"!!"
+    exit 2
+  fi
+}
+
+work_dir="/home/hudson/platform-repo/platform-work"
+fmpp_home="/home/j2play/fmpp/bin/fmpp"
+
+$fmpp_home -C $work_dir/platform.conf
+check_error "FMPP PLATFORM RULES"
+
+cd $work_dir/packages/
+make all
+check_error "PLATFORM MAKEFILE BUILD"
+echo "Platform pkgs built"

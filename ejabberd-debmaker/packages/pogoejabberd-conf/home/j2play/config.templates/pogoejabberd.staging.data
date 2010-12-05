@@ -1,0 +1,4 @@
+{
+  hosts: "xmpp.staging.pogospike.com"
+  local_host: "xmpp01.staging.pogospike.com"
+}

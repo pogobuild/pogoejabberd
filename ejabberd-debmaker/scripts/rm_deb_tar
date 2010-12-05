@@ -1,0 +1,12 @@
+#!/bin/bash
+
+deb_file="/home/hudson/pogoejabberd-pkg.tar"
+work_dir="/home/hudson/pogoejabberd-repo/pogoejabberd-work"
+
+if [ -e $deb_file ]; then
+  rm -f $deb_file
+fi
+
+if [ "$(ls -A $work_dir)" ]; then
+  rm -rf $work_dir/*
+fi

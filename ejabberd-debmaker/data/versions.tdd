@@ -1,0 +1,8 @@
+{
+  pogoejabberd: "0.1"
+  pogoejabberd-dev-profile: "0.1"
+  pogoejabberd-alpha-profile: "0.1"
+  pogoejabberd-beta-profile: "0.1"
+  pogoejabberd-prod-profile: "0.1"
+  pogoejabberd-conf: "0.1"
+}

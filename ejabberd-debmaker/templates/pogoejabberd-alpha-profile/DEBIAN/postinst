@@ -1,0 +1,5 @@
+#!/bin/sh
+
+chown -R j2play:j2play /home/j2play/
+
+echo "ALPHAPROFILE INSTALL COMPLETE!!"

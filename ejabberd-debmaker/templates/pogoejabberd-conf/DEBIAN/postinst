@@ -1,0 +1,7 @@
+#!/bin/sh
+
+chown -R j2play:j2play /home/j2play
+
+su - j2play -c '. /home/j2play/setenv.sh; /home/j2play/config.templates/run_template.sh pogoejabberd'
+
+echo "FMPP run"

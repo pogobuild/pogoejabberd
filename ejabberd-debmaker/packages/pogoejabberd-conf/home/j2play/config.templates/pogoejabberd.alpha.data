@@ -1,0 +1,4 @@
+{
+  hosts: "xmpp.alpha.pogospike.com"
+  local_host: "xmpp01.alpha.pogospike.com"
+}
